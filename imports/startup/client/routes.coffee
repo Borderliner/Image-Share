@@ -26,6 +26,5 @@ Router.route '/images', ->
 Router.route '/image/:id', ->
   @render 'singleImage', {
     to: 'main'
-    data: ->
-      return Images.findOne {_id: @params.id}
+    data: Images.findOne {_id: @params.id}
   }
