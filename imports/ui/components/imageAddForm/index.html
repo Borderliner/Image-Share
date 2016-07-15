@@ -1,0 +1,24 @@
+<template name="imageAddForm">
+<div class="modal fade" id="imageAddForm">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">
+
+        </div>
+      </div>
+      <div class="modal-body">
+        <form class="js-add-image" method="post">
+          <input type="file" name="img_src"/><br/>
+          <input type="text" name="img_label" placeholder="Enter the title of the image"/><br/>
+          <input type="text" name="img_desc" placeholder="Description of the image"/>
+          <button class="btn btn-success" type="submit">Save</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+</template>

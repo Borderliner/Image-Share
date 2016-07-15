@@ -1,0 +1,11 @@
+<template name="welcome">
+<div class="container">
+  <div class="jumbotron">  
+    <div class="text-center">
+      <h1>Welcome to Image Share app{{#if currentUser}}, {{currentUser.username}}{{/if}}</h1>
+      <br/>
+      <a class="btn btn-success btn-lg" href="/images">Enter</a>
+    </div>
+  </div>
+</div>
+</template>

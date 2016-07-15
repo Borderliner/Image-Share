@@ -1,0 +1,23 @@
+<template name="navbar">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Image Share</a>
+    </div>
+
+    <div>
+    {{#if currentUser}}
+      <button class="btn btn-default navbar-btn js-show-image-form">Add Image</button>
+    {{/if}}
+      <div class="text-right login-button">
+          {{> loginButtons align="right"}}
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+</template>
+
