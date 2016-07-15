@@ -4,7 +4,7 @@ require './index.html'
 
 imageLimit = new ReactiveVar(8)
 
-$(window).bind 'mousewheel', (event) ->
+$(window).on 'scroll', (event) ->
   if ($(window).scrollTop() + $(window).height()) > ($(document).height() - 100)
     imageLimit.set imageLimit.get() + 4
 
