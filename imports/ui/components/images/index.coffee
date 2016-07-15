@@ -49,8 +49,6 @@ Template.images.helpers
     return user.fetch()[0].username
 
 Template.images.events
-  'click .js-image': (event) ->
-    $(event.target).css('width', '50px')
   
   'click .js-del-image': (event) ->
     image_id = this._id
